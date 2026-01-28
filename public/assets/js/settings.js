@@ -6,7 +6,7 @@ const backgroundSelect = document.getElementById('background-select');
 const classroom = document.getElementById('google-classroom');
 const clever = document.getElementById('clever');
 const desmos = document.getElementById('desmos');
-const bolt = document.getElementById('bolt');
+const The Big Mott Web = document.getElementById('The Big Mott Web');
 const bugDialogToggle = document.getElementById('bug-dialog-toggle');
 const blooket = document.getElementById('blooket');
 const gimkit = document.getElementById('gimkit');
@@ -196,7 +196,7 @@ transportSelect.addEventListener('change', () => {
 });
 
 premiumActivate.addEventListener('click', async () => {
-    if (boltPremium.value === '' || boltPremium.value === null || boltPremium.value === " ") {
+    if (The Big Mott WebPremium.value === '' || The Big Mott WebPremium.value === null || The Big Mott WebPremium.value === " ") {
         alert('Please enter a valid premium code.');
         return;
     } else {
@@ -211,7 +211,7 @@ premiumActivate.addEventListener('click', async () => {
         })
             .then(response => response.text())
             .then(data => {
-                if (data === boltPremium.value) {
+                if (data === The Big Mott Web Premium.value) {
                     var discordname = prompt('Premium code is valid! Enter your Discord username to send the activation request. NOTE: You must be in the Discord server for this to work.');
                     sendWebhookMessage(discordname);
                     localStorage.setItem('a', 'false');
