@@ -1,7 +1,4 @@
 var big = document.getElementById("big");
-var disc = document.getElementById("disc");
-var yt = document.getElementById("yt");
-var tt = document.getElementById("tt");
 var pinnedApps = JSON.parse(localStorage.getItem("pinnedApps")) || [];
 var pinned = document.getElementById("pinned-apps");
 const searchInput = document.getElementById("search-input");
@@ -23,19 +20,7 @@ if (!window.location.href.includes("localhost:8080")) {
         b.classList.add("sz-link");
         b.innerHTML = '<a href="https://sz.games" target="_blank">SZ Games</a><script src="https://partner.senty.com.au/partner-3b3f1808.js"></script>'
         document.body.appendChild(b);
-    }
-}
-
-disc.addEventListener("click", function () {
-    window.open("https://discord.gg/UPGBjxZut2", "_blank");
-});
-
-yt.addEventListener("click", function () {
-    window.open("https://www.youtube.com/@bolt.network", "_blank");
-});
-tt.addEventListener("click", function () {
-    window.open("https://www.tiktok.com/@bolt.network", "_blank");
-});
+  
 
 function performSearch() {
     const query = searchInput.value.trim();
@@ -247,7 +232,7 @@ function createBrowserWindow(zindx) {
     document.body.appendChild(browserWindow);
 
     // Add to taskbar
-    addToTaskbar(browserWindow, "Bolt Browser", "/assets/imgs/logos/boltbrowser.svg");
+    addToTaskbar(browserWindow, "The Big Mott Web Browser", "/assets/imgs/logos/The Big Mott Web browser.svg");
 
     setTimeout(() => {
         browserWindow.style.cssText = "z-index:" + zindx + "; position: absolute; top: 0; left: 0; width: 100%; height: 93vh; background-color: none; border: none; opacity: 1; transform: scale(1); transition: opacity 0.5s, transform 0.5s;";
@@ -266,8 +251,7 @@ async function isFlagged() {
         .then(response => response.text())
         .then(data => {
             if (window.location.href === data) {
-                alert("This Bolt link is either flagged or down. Please join the Discord server for working links.");
-                window.location.href = "https://discord.gg/UPGBjxZut2";
+                alert("This The Big Mott Web link is either flagged or down.";
             }
         })
         .catch(error => {
