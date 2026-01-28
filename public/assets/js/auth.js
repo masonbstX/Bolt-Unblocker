@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             overlay.className = 'onboarding-overlay';
             overlay.innerHTML = `
                 <div class="onboarding-content">
-                    <h1 class="onboarding-title">Welcome to Bolt</h1>
+                    <h1 class="onboarding-title">Welcome to The Big Mott Web Proxy</h1>
                     <div class="input-wrapper">
                         <input type="text" class="name-input" id="onboarding-name" placeholder="Enter your name" autocomplete="off">
                     </div>
