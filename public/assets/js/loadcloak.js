@@ -70,8 +70,8 @@ document.addEventListener('DOMContentLoaded', function () {
             break;
         case 'none':
         default:
-            changeFavicon("/assets/imgs/logos/boltlogo11.ico");
-            document.title = 'Bolt Unblocker';
+            changeFavicon("/assets/imgs/logos/The Big Mott Weblogo11.ico");
+            document.title = 'The Big Mott Web Unblocker';
             break;
     }
 
