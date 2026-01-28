@@ -52,7 +52,7 @@ function launchApp(appId, urlKey) {
     }
 
     let appName = appId;
-    let appIcon = '/assets/imgs/logos/boltlogo11.ico';
+    let appIcon = '/assets/imgs/logos/The Big Mott Weblogo11.ico';
 
     const pinnedApps = JSON.parse(localStorage.getItem("pinnedApps")) || [];
     const pinnedApp = pinnedApps.find(app => app.name === appId);
@@ -84,7 +84,7 @@ function launchApp2(appId, urlKey) {
     }
 
     let appName = appId;
-    let appIcon = '/assets/imgs/logos/boltlogo11.ico';
+    let appIcon = '/assets/imgs/logos/The Big Mott Weblogo11.ico';
 
     if (appId === "settings") {
         appIcon = "/assets/imgs/logos/cog.svg";
@@ -118,7 +118,7 @@ function createBrowserWindow(zindx) {
     document.getElementById("apps").classList.remove("active");
     document.body.appendChild(browserWindow);
 
-    addToTaskbar(browserWindow, "Bolt Browser", "/assets/imgs/logos/boltbrowser.svg");
+    addToTaskbar(browserWindow, "The Big Mott Web Browser", "/assets/imgs/logos/The Big Mott Webbrowser.svg");
 
     setTimeout(() => {
         browserWindow.style.cssText = "z-index:" + zindx + "; position: absolute; top: 0; left: 0; width: 100%; height: 93vh; background-color: none; border: none; opacity: 1; transform: scale(1); transition: opacity 0.5s, transform 0.5s;";
@@ -154,7 +154,7 @@ ap.contentWindow.document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("apps").classList.remove("active");
         document.body.appendChild(browserWindow);
 
-        addToTaskbar(browserWindow, "Bolt Browser", "/assets/imgs/logos/boltbrowser.svg");
+        addToTaskbar(browserWindow, "The Big Mott Web Browser", "/assets/imgs/logos/The Big Mott Webbrowser.svg");
 
         setTimeout(() => {
             browserWindow.style.cssText = "z-index:" + zindx + "; position: absolute; top: 0; left: 0; width: 100%; height: 93vh; background-color: none; border: none; opacity: 1; transform: scale(1); transition: opacity 0.5s, transform 0.5s;";
