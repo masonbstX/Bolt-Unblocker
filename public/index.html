@@ -82,16 +82,7 @@
     </div>
     <div id="pinned-apps"></div>
     <div id="footer-social">
-      <button id="disc" data-tooltip="Discord">
-        <img src="/assets/imgs/otherlogos/discord.svg" id="dlogo" />
-      </button>
-      <button id="yt" data-tooltip="YouTube">
-        <img src="/assets/imgs/otherlogos/youtube.svg" id="ytlogo" />
-      </button>
-      <button id="tt" data-tooltip="TikTok">
-        <img src="/assets/imgs/otherlogos/tiktok.svg" id="ttlogo" />
-      </button>
-      <div id="t"></div>
+     
     </div>
   </div>
   <div id="content">
@@ -102,83 +93,6 @@
 
   </iframe>
   <div class="stars"></div>
-
-  <div id="bug-report-notification" data-tooltip="Right-click to close">
-    <div class="notification-content">
-      <span class="bug-icon">🐛</span>
-      <span class="notification-text">Help us improve! Report bugs here</span>
-    </div>
-  </div>
-
-  <div id="bug-report-modal" class="hidden">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="header-icon">
-          <span class="bug-emoji">🐛</span>
-        </div>
-        <h3>Report an Issue</h3>
-        <button id="close-modal">×</button>
-      </div>
-      <div class="modal-body">
-        <p class="report-intro">Help us improve The Big Mott Web by reporting any bugs or issues you encounter.</p>
-
-        <form id="bug-report-form">
-          <div class="form-group">
-            <label for="bug-description">Description:</label>
-            <textarea id="bug-description" placeholder="Please describe what happened and how to reproduce the issue..."
-              required></textarea>
-          </div>
-
-          <div class="form-tabs">
-            <div class="tab-buttons">
-              <button type="button" class="tab-btn active" data-tab="screenshot">Screenshot</button>
-              <button type="button" class="tab-btn" data-tab="details">Details</button>
-            </div>
-
-            <div class="tab-content active" id="screenshot-tab">
-              <div class="upload-container">
-                <label for="bug-image" class="upload-label">
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
-                      fill="#00b7ff" />
-                  </svg>
-                  <span>Drop image here or click to upload</span>
-                </label>
-                <input type="file" id="bug-image" accept="image/*">
-              </div>
-              <div id="image-preview"></div>
-            </div>
-
-            <div class="tab-content" id="details-tab">
-              <div class="form-row">
-                <div class="form-col">
-                  <label for="bug-severity">Severity:</label>
-                  <select id="bug-severity">
-                    <option value="low">Low - Minor inconvenience</option>
-                    <option value="medium" selected>Medium - Function is broken</option>
-                    <option value="high">High - Site is unusable</option>
-                  </select>
-                </div>
-                <div class="form-col">
-                  <label for="bug-page">Where did it happen?</label>
-                  <input type="text" id="bug-page" placeholder="Homepage, app, or URL">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="form-actions">
-            <div class="status-wrapper">
-              <div id="submission-status" class="hidden"></div>
-            </div>
-            <button type="submit" id="submit-bug">Submit Report</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
   <style>
     .sz-link {
       position: fixed;
